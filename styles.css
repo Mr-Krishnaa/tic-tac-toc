@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:rgb(9, 9, 72);
+    color: rgb(24, 138, 225);
+}
+
+.container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color:none;
+    border: 2px solid rgb(24, 138, 225);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    cursor: pointer;
+    color: rgb(24, 225, 135);
+}
+
+.cell:hover {
+    background-color:rgb(27, 6, 103);
+}
+
+.reset{
+   background-color:rgb(11, 81, 135);
+   color: white;
+   width: 100px;
+   height: 30px;;
+   font-size: 1rem;
+   cursor: pointer;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: white;
+}
